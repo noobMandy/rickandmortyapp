@@ -7,8 +7,18 @@ export const fetchCharactersData = async () => {
   return response.data;
 };
 
-export const fetchEpisodesData = async () => {
-  const response = await axios.get(`${BASE_URL}episode`);
+
+
+export const fetchEpisodesData = async (name = "", episodeCode = "") => {
+  const queryParams = new URLSearchParams();
+  if (name) {
+    queryParams.append("name", name);
+  }
+  if (episodeCode) {
+    queryParams.append("episode", episodeCode);
+  }
+
+  const response = await axios.get(`${BASE_URL}episode?${queryParams.toString()}`);
   return response.data;
 };
 
