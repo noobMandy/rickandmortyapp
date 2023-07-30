@@ -51,9 +51,3 @@ Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
 Feel free to customize this README file to include more details about your project, installation instructions, usage guidelines, deployment instructions, and any other relevant information. Happy coding!
-
-
-
-
-
-Regenerate
